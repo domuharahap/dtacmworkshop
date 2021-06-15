@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Checkout code'){
             steps{
-                git 'https://github.com/dynatrace-acm/dtacmworkshop'
+                git 'https://github.com/domuharahap/dtacmworkshop'
             }
         }
         stage('Build Code') {
