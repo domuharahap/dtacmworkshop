@@ -1,10 +1,18 @@
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts
   namespace: production
 spec:
+  selector:
+    matchLabels:
+      app: carts
+      stage: prod
+      release: stable
+      version: "2.3"
+      tier: "business"
+      product: "sockshop"
   replicas: 1
   template:
     metadata:
