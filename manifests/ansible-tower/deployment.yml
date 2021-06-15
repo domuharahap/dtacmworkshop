@@ -1,10 +1,14 @@
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ansible-tower
   namespace: tower
 spec:
+  selector:
+    matchLabels:
+      app: ansible-tower
+      version: v1
   replicas: 1
   template:
     metadata:
