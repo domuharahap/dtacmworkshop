@@ -5,7 +5,7 @@
 			"aggregation": "avg",
 			"tags": "[Kubernetes]app:carts,[Kubernetes]stage:dev",
 			"upperWarning": 6000,
-			"upperSevere": 12000
+			"upperSevere": 15000
 		}
 	]
 }
